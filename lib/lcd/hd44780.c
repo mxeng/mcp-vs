@@ -4,9 +4,9 @@ Author :   SA Development
 Version:   1.11
 *****************************************************************************/
 
-#include "avr\pgmspace.h"
+#include "avr/pgmspace.h"
 #include "hd44780.h"
-#include "avr\sfr_defs.h"
+#include "avr/sfr_defs.h"
 #if (USE_ADELAY_LIBRARY==1)
   #include "adelay.h"
 #else
