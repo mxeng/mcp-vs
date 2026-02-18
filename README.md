@@ -1,4 +1,4 @@
-### MCP - Visual Studio Code version
+## MCP - Visual Studio Code version
 
 This directory contains all that is needed to set up and get started with the visual studio code version of the microcontroller project.
 
@@ -12,3 +12,15 @@ To get started follow the directions below
  - Inside explorer (ctrl + shift + r) select the platformio.ini file and change the upload port to the port assigned to your arduino
    - This can be found by running "mode" in the terminal
  - Add code to the Controller.c or Robot.c files then click build or upload under the controller or robot tasks in the platformIO tab
+
+## platformio.ini Config
+### USB Port
+To configure the port that the robot uploads to or monitors, you will need to update the following lines:
+- monitor_port
+- upload_port
+
+To find what these should be set as:
+
+On windows you can run `mode` in the terminal, and change the "com" port to match the one listed; 
+
+On Mac you can run `ls dev/cu.usb*` in the terminal to get a value that looks like "/dev/cu.usbserial-XXXX" replace the "comX" in the file with this value.
