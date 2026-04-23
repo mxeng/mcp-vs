@@ -470,7 +470,7 @@ ISR(USART3_RX_vect)  // ISR executed whenever a new byte is available in the ser
 			serial3DataByte5 = recvByte5;
 			serial3DataByte6 = recvByte6;
 			// now that the stop byte has been received, set a flag that new data is available
-			serial2DataReady=true;
+			serial3DataReady=true;
 		}
 		serial_fsm_state = 0; //set to expect start byte
 	}
